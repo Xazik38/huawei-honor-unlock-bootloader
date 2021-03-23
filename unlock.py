@@ -23,9 +23,9 @@ def bruteforceBootloader(increment):
     autorebootcount = 4                 #reboot every x attemps if autoreboot is True, set this one below the automatic reboot by the bootloader
     savecount       = 200               #save progress every 200 attempts, do not set too low to prevent storage wearout
     unknownfail     = True              #fail if output is unknown, only switch to False if you have problems with this
-    
+
     failmsg = "check password failed"   #used to check if code is wrong
-    
+
     unlock=False
     n=0
     while (unlock == False):
@@ -101,7 +101,7 @@ print("Please select \"Always allow from this computer\" in the adb dialog!")
 
 checksum = 1
 while (checksum != 0):
-    if staticimei == 0: 
+    if staticimei == 0:
         imei = int(input('Type IMEI: '))
     if staticimei > 0:
         imei = staticimei
